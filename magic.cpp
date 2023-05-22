@@ -172,13 +172,13 @@ int main()
     string message="",ciphertext,plaintext;
     cout<<" \n\n\n MESSAGE TO BE ENCRYPTED : ";
     getline(cin,message);
-    // key.printSquare();
+    key.printSquare();
     cout<<endl;
     key.makeRandom();    
                         
     key.printSquare();  
     cout<<endl<<endl;
-    //key.printChars();
+    key.printChars();
     Encryptor e(key);
     ciphertext=e.encrypt(message);
     cout<<"\n\n CIPHER TEXT: "<<ciphertext<<endl;
